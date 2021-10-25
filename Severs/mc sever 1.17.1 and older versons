@@ -1,0 +1,54 @@
+mc sever 1.17.1 and older versons
+
+i have a groop of frends that wanted to play on a mc sever and sins we are all poor gentlemen
+we did not want to spend 200kr per month on a sever = 20$ per month on a sever we got a pi to run at my home and we found out that there is no info online showing how to set one up after some time we got it running and we wanted to help others that have the same problem
+
+so here is a step by step Gide
+
+Warning
+
+if something happens to your pi machine it is not my fault and i have not responsibility to what happens to you or your pi machine but if something do end up happen and it brakes. you can tell a wall or a peace of cake that it broke and not me or any of my friends
+
+1
+downlode the version of minecraft you want to play on for this example i will you 1.17.1 vinila
+https://www.minecraft.net/en-us/download/server
+
+2
+
+install the version of java you need.
+i needed 1.16 java so i installed it with help of this reddit post
+https://www.reddit.com/r/raspberry_pi/comments/nxdva3/install_java_16_on_raspberry_pi/
+
+3
+make a folder that you want to run the minecraft sever in or open terminal and tipe in
+mkdir MinecraftServer
+cd MinecraftServer
+
+4
+
+now put in your mincraft sever .jar file into your new minecraft sever folder
+
+5
+
+now run the minecraft sever with the command java -Xmx2500M -Xms2500M -jar server.jar nogui
+
+6
+
+You'll get a warning that you didn't accept the EULA, so now open "pico eula.txt" and set eula=true, then hit Ctrl-X and Yes to save the new file. Press the up key and run your command again.
+
+7
+
+run the command java -Xmx2500M -Xms2500M -jar server.jar nogui
+and it will now start the mc sever
+
+note i use a 4gb pi machine and it will be a bit lag to begin with so set the render disdens to 5 or 8 and you will need something cooling the pi i reused a old fan form a bitcoin miner and it work. and if something happens to your pi machine it is not my fault and i have not responsibility to what happens to you or your pi machine
+
+good luck and i hope i helped
+
+sores
+
+https://minecraft.fandom.com/wiki/Server/Requirements/Dedicated
+
+https://www.hanselman.com/blog/how-to-use-a-raspberry-pi-4-as-a-minecraft-java-server
+
+https://www.reddit.com/r/raspberry_pi/comments/nxdva3/install_java_16_on_raspberry_pi/
